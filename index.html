@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wesite Pribadi !!! </title>
+    <style>
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0100023b;
+            color: #5e09a360;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #5e09a360;
+            color: #fff;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            ;
+            margin-right: 55px;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000ea;
+            font-weight: bold;
+            cursor: pointer;
+            justify-content: space-around;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        #home {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .foto {
+            max-width: 60%;
+            width: 8cm;
+            height: 10cm;
+            text-align: center;
+            margin-left: 1.6cm;
+            margin-left: 0.1cm;
+        }
+
+        h2 {
+            color: #333333;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px 0;
+            line-height: 1.4;
+            font-size: 18px;
+        }
+
+        .pendidikan {
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        .education-item {
+            border: 2px solid #315078;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .education-item h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .education-item p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        #jadwal-kuliah {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        #aktivitas {
+            background-color: #a7a6a6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px 0;
+            line-height: 1.4;
+        }
+
+        p>br::before {
+            content: "\2022";
+            color: #e76f51;
+            padding-right: 5px;
+        }
+
+        footer {
+            background-color: #8e07e74b;
+            color: #000000ea;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #lainnya {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px 0;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #54205a;
+        }
+
+        p>br::before {
+            content: "\2022";
+            /* Karakter bullet (•) */
+            color: #e76f51;
+            /* Warna bullet */
+            padding-right: 5px;
+            /* Ruang antara bullet dan teks */
+        }
+
+        .skill-category {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Selamat Datang di Website Pribadi Saya</h1>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('home')">HOME</a></li>
+                <li><a onclick="showSection('pendidikan')">PENDIDIKAN</a></li>
+                <li><a onclick="showSection('jadwal-kuliah')">JADWAL KULIAH</a></li>
+                <li><a onclick="showSection('aktivitas')">AKTIVITAS</a></li>
+                <li><a onclick="showSection('lainnya')">LAINNYA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Informasi Sekilas tentang Saya</h2>
+        <img src="foto icha.JPG" alt="" class="foto">
+        <p>      Nama Lengkap          : Marizcha Lutfiana Putri
+            <br> Tempat, tanggal lahir : Surabaya, 11 Maret 2003
+            <br> Alamat                : Jl. Flamboyan Rt.16 Rw.06 Desa Sukoanyar Kec. Wajak Kab. Malang
+            <br> Telp                  : 085732279804
+            <br> Media Sosial          : @Marizcha.zc
+        </p>
+    </section>
+
+    <section id="pendidikan">
+        <h2>Pendidikan</h2>
+        <div class="education-item">
+            <h3>SMPN 1 Wajak</h3>
+            <p>Tahun: 2015 - 2018</p>
+        </div>
+        <div class="education-item">
+            <h3>SMA Negeri 1 Tumpang</h3>
+            <p>Tahun: 2018 - 2021</p>
+        </div>
+        <div class="education-item">
+            <h3>UIN Maulana Malik Ibrahim Malang</h3>
+            <p>Tahun: 2021 - sekarang</p>
+        </div>
+    </section>
+
+    <section id="jadwal-kuliah">
+        <h2>Jadwal Kuliah</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hari</th>
+                    <th>Mata Kuliah</th>
+                    <th>Jam</th>
+                    <th>Ruangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Senin</td>
+                    <td>Statistika Matematika</td>
+                    <td>06.30-09.00</td>
+                    <td>Ruang Diskusi</td>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>PPK II</td>
+                    <td>09.00-10.40</td>
+                    <td>Lab. Komputasi</td>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>PPM</td>
+                    <td>14.00-15.40</td>
+                    <td>Lab. Terapan</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td>Analisis Numerik</td>
+                    <td>06.30-09.00</td>
+                    <td>Ruang B.208</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td>Teori Ukuran</td>
+                    <td>2.20-14.00</td>
+                    <td>Lab. Analisis</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>Pemodelan Matematika</td>
+                    <td>06.30-09.00</td>
+                    <td>Ruang B.208</td>
+                </tr>
+                <tr>
+                    <td>Kamis</td>
+                    <td>Analisis Kompleks</td>
+                    <td>06.30-09.00</td>
+                    <td>Ruang B.208</td>
+                </tr>
+                <tr>
+                    <td>Kamis</td>
+                    <td>Kapita Selekta Analisis</td>
+                    <td>14.00-15.40</td>
+                    <td>Lab. Analisis</td>
+                </tr>
+                <tr>
+                    <td>Jumat</td>
+                    <td>Pemrograman Komputer</td>
+                    <td>06.30-09.00</td>
+                    <td>Ruang B.208</td>
+                </tr>
+                <tr>
+                    <td>Jumat</td>
+                    <td>Geometri Analitik</td>
+                    <td>12.20-15.40</td>
+                    <td>Ruang B.205</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <section id="aktivitas">
+        <h2>Aktivitas</h2>
+        <p>
+            <br> - Divisi Kematematikaan HMPS "Integral" Matematika UIN Malang Tahun 2022
+            <br> - Divisi Internal Public Relation (IPR) HMPS "Integral" Matematika UIN Malang Tahun 2023
+            <br> - Pengurus PMII Rayon Pencerahan Galileo Tahun 2021-Sekarang
+            <br> - Tentor Pengajar Bimbel Primamega Malang
+        </p>
+    </section>
+
+    <section id="lainnya">
+        <h2>Informasi Lainnya</h2>
+        <p>
+            <span class="skill-category">Softskill</span>
+            <br>- Kesabaran
+            <br>- Pengaturan waktu
+            <br>- Pemecahan masalah
+            <br>- Public Speaking
+        </p>
+        <p><span class="skill-category">Hardskill</span>
+            <br>- Microsoft Office Word
+            <br>- Microsoft Office Excel
+            <br>- Canva
+        </p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 Situs Web Pribadi Saya</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Menampilkan bagian yang sesuai
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            var sectionToShow = document.getElementById(sectionId);
+            if (sectionToShow) {
+                sectionToShow.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
